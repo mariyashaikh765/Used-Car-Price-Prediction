@@ -2,8 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
+
 
 with open("saved_rfr.pkl", "rb") as file:
     data2=pickle.load(file)
