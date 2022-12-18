@@ -18,7 +18,7 @@ def main():
     choice=st.sidebar.selectbox("Navigation", menu)
 
     if choice=="Home":
-        img=Image.open("C:\\Users\\SHAIKH MARIYA\\Pictures\\car image.jpg")
+        img=Image.open("car image.jpg")
         st.image(img)
         st.write("""### About the App""")
         st.write("This application is a part of the Data Science project. This Web Application includes  a machine learning model that will easily predict the resale valuation of the Car and the customer can access this model from the Web Application directly and get benefit from the prediction. The customer will just have to provide some features of the Car on the Website and my model will provide the Best Price Prediction.")
