@@ -39,12 +39,12 @@ def show_explore_page():
 
     elif submenu=="Plots":
         st.subheader("Visualization Plots")
-        st.write("#### Top 10 Company the Dataset")
+        st.write("#### Top 10 Company in the Dataset")
         with st.expander("Plot based on Top 10 company in the Dataset"):
             new1=cars.Company.value_counts().head(10)
             st.bar_chart(new1)
         
-        st.write("#### Least 15 Company the Dataset")
+        st.write("#### Least 15 Company in the Dataset")
         with st.expander("Plot based on Least 15 company in the Dataset"):
             new2=cars.Company.value_counts().tail(15)
             st.bar_chart(new2)
